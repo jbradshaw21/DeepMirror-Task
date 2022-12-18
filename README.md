@@ -18,15 +18,15 @@ Challenges:
 	- Idea: implement baseline models on two datasets for each of the ADME properties (priority order:
 	- Astrazeneca -> most cited -> ... -> least cited)
 - First time working with molecular modelling data
-	I found a package that converts 'smiles string' to graph format
+	- I found a package that converts 'smiles string' to graph format
 - How to deal with neural net regression rather than classification?
-	I designated a single output class and traded the CrossEntropyLoss for an L1Loss metric
+	- I designated a single output class and traded the CrossEntropyLoss for an L1Loss metric
 - How to deal with no node features?
-	I first initialised a placeholder vector with all ones
-	Then, I decided to implement the node 'degrees' as node features after reading it is useful to weight
+	- I first initialised a placeholder vector with all ones
+	- Then, I decided to implement the node 'degrees' as node features after reading it is useful to weight
 	nodes with fewer degrees as more important (though, I suspect this is not an appropraite implementation)
 - How to deal with node logits?
-	Attempted to convert node regressors to graph regressors by averaging the predictions of the nodes for
+	- Attempted to convert node regressors to graph regressors by averaging the predictions of the nodes for
 	each graph
 
 Questions:
@@ -45,17 +45,17 @@ Ideas:
   over validation set, then produce result (MAELoss) on test set with this hyperparam setting
 - Provide MAELoss metric for supervised-GNN, Transformers, Classical Tree Model over two 'best' datasets
 - Regarding Transformers: I have not studied NLP before. 
-	I am confident that I could produce an implementation given a few days to do background reading
-	... however, given the time frame I can't justify an attempt
-	I have heard of graph transformers - would you implement something like this? Or implement typical NLP
+	- I am confident that I could produce an implementation given a few days to do background reading
+	- ... however, given the time frame I can't justify an attempt
+	- I have heard of graph transformers - would you implement something like this? Or implement typical NLP
 	on the smiles string for the small molecule?
 - Regarding Classical Tree Model: I could have produced e.g., RandomForestRegressor with sklearn, but unsure
   how to approach this task using the provided data-types
-	I am aware that Tree models can take graph-based input, however, I have not coded this before
-	Andrea talked about Monte Carlo Tree Search as an appropriate means of performing prediction tasks with
+	- I am aware that Tree models can take graph-based input, however, I have not coded this before
+	- Andrea talked about Monte Carlo Tree Search as an appropriate means of performing prediction tasks with
 	molecules (good explainability)
-	Similar to transformers, new method for me
-	... given the time frame I can't justify an attempt
+	- Similar to transformers, new method for me
+	- ... given the time frame I can't justify an attempt
 
 Next Steps:
 - Spend a few days background reading on NLP and Transformers models
