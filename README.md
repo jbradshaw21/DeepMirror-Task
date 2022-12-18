@@ -1,5 +1,6 @@
 # DeepMirror-Task
 Choose datasets, setup env, familiarise with new data type 'smiles string', convert to useful data type (45min)
+
 Build pipeline, bugfixing (3hr)
 Fit functionality for GCN (1hr)
 Collecting ideas + write-up (30min)
