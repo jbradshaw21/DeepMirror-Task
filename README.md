@@ -12,11 +12,11 @@ Status:
 
 Challenges:
 - Choose good datasets for each task
-	Select datasets with the most citations on Google Scholar
-	Exception: AstraZeneca datasets do not appear to published on Scholar - as they are a trusted source,
+	- Select datasets with the most citations on Google Scholar
+	- Exception: AstraZeneca datasets do not appear to published on Scholar - as they are a trusted source,
 	I give the datasets a bye
-	Idea: implement baseline models on two datasets for each of the ADME properties (priority order:
-	Astrazeneca -> most cited -> ... -> least cited)
+	- Idea: implement baseline models on two datasets for each of the ADME properties (priority order:
+	- Astrazeneca -> most cited -> ... -> least cited)
 - First time working with molecular modelling data
 	I found a package that converts 'smiles string' to graph format
 - How to deal with neural net regression rather than classification?
